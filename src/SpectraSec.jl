@@ -7,7 +7,7 @@ Blazing fast • Type-safe • Memory-efficient • Cryptographically secure
 Author: bad-antics
 Repository: https://github.com/bad-antics/spectra
 """
-module Spectra
+module SpectraSec
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #                              SPECTRA SECURITY FRAMEWORK
@@ -23,7 +23,7 @@ using TOML
 using UUIDs
 
 # Version info
-const VERSION = v"1.0.0"
+const VERSION = v"0.1.0"
 const AUTHOR = "bad-antics"
 const REPO = "https://github.com/bad-antics/spectra"
 
@@ -319,4 +319,4 @@ include("integrations/NullSec.jl")
 #                                MODULE END
 # ───────────────────────────────────────────────────────────────────────────────
 
-end # module Spectra
+end # module SpectraSec

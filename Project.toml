@@ -1,7 +1,7 @@
-name = "Spectra"
-uuid = "7d4c8e2a-1f3b-5c6d-9e0a-2b4f6c8d1e3a"
+name = "SpectraSec"
+uuid = "1a979f1b-8934-418c-a317-df2eafe56f5d"
 authors = ["bad-antics <160459796+bad-antics@users.noreply.github.com>"]
-version = "1.0.0"
+version = "0.1.0"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"

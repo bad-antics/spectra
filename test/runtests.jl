@@ -6,8 +6,8 @@ using Test
 using Dates
 
 # Include the main module
-include("../src/Spectra.jl")
-using .Spectra
+include("../src/SpectraSec.jl")
+using .SpectraSec
 
 @testset "Spectra Core Tests" begin
     
@@ -39,22 +39,22 @@ using .Spectra
     
     @testset "Configuration" begin
         # Test global CONFIG exists and is a SpectraConfig
-        @test Spectra.CONFIG isa SpectraConfig
-        @test Spectra.CONFIG.verbose isa Bool
-        @test Spectra.CONFIG.max_threads >= 1
-        @test Spectra.CONFIG.timeout > 0.0
+        @test SpectraSec.CONFIG isa SpectraConfig
+        @test SpectraSec.CONFIG.verbose isa Bool
+        @test SpectraSec.CONFIG.max_threads >= 1
+        @test SpectraSec.CONFIG.timeout > 0.0
         
         # Test init with verbose=false (to suppress banner output)
         init(verbose=false)
-        @test Spectra.CONFIG.verbose == false
+        @test SpectraSec.CONFIG.verbose == false
 
         # Restore verbose
-        Spectra.CONFIG.verbose = true
+        SpectraSec.CONFIG.verbose = true
 
         # Test set_config!
-        Spectra.set_config!("general", "verbose", false)
-        @test Spectra.CONFIG.verbose == false
-        Spectra.set_config!("general", "verbose", true)
+        SpectraSec.set_config!("general", "verbose", false)
+        @test SpectraSec.CONFIG.verbose == false
+        SpectraSec.set_config!("general", "verbose", true)
     end
     
     @testset "Crypto - Hash Identification" begin
