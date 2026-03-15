@@ -35,15 +35,21 @@ export
     # Core
     init, configure, status, banner,
     # Types
-    Target, ScanResult, ThreatLevel, PortState,
+    Target, ScanResult, ThreatLevel, PortState, SpectraConfig,
+    Threat, HashIdentification, EntropyResult, ThreatScore, AggregateScore,
+    # Enum values
+    CRITICAL, HIGH, MEDIUM, LOW, INFO,
+    OPEN, CLOSED, FILTERED, UNKNOWN,
     # Scanning
     scan, quick_scan, full_scan, stealth_scan,
     # Analysis
     analyze, score, classify, report,
+    scan_for_patterns, calculate_threat_score, aggregate_scores, assess_risk,
     # Crypto
-    hash_identify, entropy_analyze, random_bytes,
+    hash_identify, entropy_analyze, random_bytes, compute_hash, compute_all_hashes,
     # Network
     port_scan, service_detect, banner_grab,
+    parse_ipv4_header, parse_tcp_header, parse_udp_header,
     # Recon
     dns_enum, subdomain_scan, whois_lookup,
     # Utilities

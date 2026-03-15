@@ -82,11 +82,11 @@ const CHARSET_PATTERNS = Dict{Symbol, Regex}(
 # ───────────────────────────────────────────────────────────────────────────────
 
 """
-    detect_charset(hash::String)
+    detect_charset(hash::AbstractString)
 
 Detect the character set of a hash string.
 """
-function detect_charset(hash::String)::Symbol
+function detect_charset(hash::AbstractString)::Symbol
     for (charset, pattern) in CHARSET_PATTERNS
         if occursin(pattern, hash)
             return charset
