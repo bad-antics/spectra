@@ -5,7 +5,6 @@
 ```
 # Spectra — Spectral Analysis & Security Framework
 
-╚══════╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
          Security Protocol Engine for Cyber Threat Response & Analysis
 ```
 
